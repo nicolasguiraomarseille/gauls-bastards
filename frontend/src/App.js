@@ -7,24 +7,25 @@ const API = `${BACKEND_URL}/api`;
 
 // ===== ASSETS =====
 const LOGO = "https://customer-assets.emergentagent.com/job_langue-learn-11/artifacts/irtl89ow_1000038881.png";
-// Photo noir et blanc avec logo et membres alignés
-const HERO_IMAGE = "https://customer-assets.emergentagent.com/job_langue-learn-11/artifacts/5lse2d11_1000032644.jpg";
+// Photo noir et blanc au bar - sans logo intégré
+const HERO_IMAGE = "https://customer-assets.emergentagent.com/job_langue-learn-11/artifacts/s5a1hur6_1000033522.jpg";
 // Photo des dos avec les patchs - parfaite pour la section About
 const ABOUT_IMAGE = "https://customer-assets.emergentagent.com/job_langue-learn-11/artifacts/5g0f3xyb_1000036951.jpg";
 
 const GALLERY_IMAGES = [
-  { id: 1, src: "https://customer-assets.emergentagent.com/job_langue-learn-11/artifacts/pzfv1w3g_1000036950.jpg", alt: "GAULS BASTARDS - Rassemblement moto Marseille", category: "rides" },
-  { id: 2, src: "https://customer-assets.emergentagent.com/job_langue-learn-11/artifacts/26z17tle_1000039803.jpg", alt: "GAULS BASTARDS - Le groupe au complet", category: "club" },
-  { id: 3, src: "https://customer-assets.emergentagent.com/job_langue-learn-11/artifacts/s5a1hur6_1000033522.jpg", alt: "GAULS BASTARDS - Soirée de Noël", category: "events" },
-  { id: 4, src: "https://customer-assets.emergentagent.com/job_langue-learn-11/artifacts/1768cv1x_1000036969.jpg", alt: "GAULS BASTARDS - Soirée au bar avec moto", category: "events" },
-  { id: 5, src: "https://customer-assets.emergentagent.com/job_langue-learn-11/artifacts/my2b0py7_1000039773.jpg", alt: "GAULS BASTARDS - Membres avec le patch", category: "club" },
-  { id: 6, src: "https://customer-assets.emergentagent.com/job_langue-learn-11/artifacts/3ujsh6c1_1000039797.jpg", alt: "GAULS BASTARDS - Fraternité", category: "club" },
-  { id: 7, src: "https://customer-assets.emergentagent.com/job_langue-learn-11/artifacts/r6sbdvop_1000038988.jpg", alt: "GAULS BASTARDS - Saint Patrick", category: "events" },
-  { id: 8, src: "https://customer-assets.emergentagent.com/job_langue-learn-11/artifacts/pahd3cki_1000030883.jpg", alt: "GAULS BASTARDS - Soirée entre amis", category: "events" },
-  { id: 9, src: "https://customer-assets.emergentagent.com/job_langue-learn-11/artifacts/n7fmbdxz_1000036545.jpg", alt: "GAULS BASTARDS - Bras de fer", category: "events" },
-  { id: 10, src: "https://customer-assets.emergentagent.com/job_langue-learn-11/artifacts/sapwt1ig_1000039815.jpg", alt: "GAULS BASTARDS - Réunion du club", category: "club" },
-  { id: 11, src: "https://customer-assets.emergentagent.com/job_langue-learn-11/artifacts/jbfsqjcs_1000036972.jpg", alt: "GAULS BASTARDS - Terrasse avec les motos", category: "rides" },
-  { id: 12, src: "https://customer-assets.emergentagent.com/job_langue-learn-11/artifacts/5g0f3xyb_1000036951.jpg", alt: "GAULS BASTARDS - Les patchs du club", category: "club" },
+  { id: 1, src: "https://customer-assets.emergentagent.com/job_langue-learn-11/artifacts/5lse2d11_1000032644.jpg", alt: "GAULS BASTARDS - Le club avec le logo", category: "club" },
+  { id: 2, src: "https://customer-assets.emergentagent.com/job_langue-learn-11/artifacts/pzfv1w3g_1000036950.jpg", alt: "GAULS BASTARDS - Rassemblement moto Marseille", category: "rides" },
+  { id: 3, src: "https://customer-assets.emergentagent.com/job_langue-learn-11/artifacts/26z17tle_1000039803.jpg", alt: "GAULS BASTARDS - Le groupe au complet", category: "club" },
+  { id: 4, src: "https://customer-assets.emergentagent.com/job_langue-learn-11/artifacts/s5a1hur6_1000033522.jpg", alt: "GAULS BASTARDS - Soirée de Noël", category: "events" },
+  { id: 5, src: "https://customer-assets.emergentagent.com/job_langue-learn-11/artifacts/1768cv1x_1000036969.jpg", alt: "GAULS BASTARDS - Soirée au bar avec moto", category: "events" },
+  { id: 6, src: "https://customer-assets.emergentagent.com/job_langue-learn-11/artifacts/my2b0py7_1000039773.jpg", alt: "GAULS BASTARDS - Membres avec le patch", category: "club" },
+  { id: 7, src: "https://customer-assets.emergentagent.com/job_langue-learn-11/artifacts/3ujsh6c1_1000039797.jpg", alt: "GAULS BASTARDS - Fraternité", category: "club" },
+  { id: 8, src: "https://customer-assets.emergentagent.com/job_langue-learn-11/artifacts/r6sbdvop_1000038988.jpg", alt: "GAULS BASTARDS - Saint Patrick", category: "events" },
+  { id: 9, src: "https://customer-assets.emergentagent.com/job_langue-learn-11/artifacts/pahd3cki_1000030883.jpg", alt: "GAULS BASTARDS - Soirée entre amis", category: "events" },
+  { id: 10, src: "https://customer-assets.emergentagent.com/job_langue-learn-11/artifacts/n7fmbdxz_1000036545.jpg", alt: "GAULS BASTARDS - Bras de fer", category: "events" },
+  { id: 11, src: "https://customer-assets.emergentagent.com/job_langue-learn-11/artifacts/sapwt1ig_1000039815.jpg", alt: "GAULS BASTARDS - Réunion du club", category: "club" },
+  { id: 12, src: "https://customer-assets.emergentagent.com/job_langue-learn-11/artifacts/jbfsqjcs_1000036972.jpg", alt: "GAULS BASTARDS - Terrasse avec les motos", category: "rides" },
+  { id: 13, src: "https://customer-assets.emergentagent.com/job_langue-learn-11/artifacts/5g0f3xyb_1000036951.jpg", alt: "GAULS BASTARDS - Les patchs du club", category: "club" },
 ];
 
 const EVENTS = [
@@ -590,8 +591,8 @@ const Footer = () => {
         <div className="divider my-8"></div>
 
         <div className="text-center text-[var(--color-gray)] text-sm space-y-2">
-          <p>Moto Club Custom • Marseille • Bouches-du-Rhône (13) • Aix-en-Provence • Martigues • Cassis</p>
-          <p>Harley-Davidson • Indian • Shadow • Custom Bikes</p>
+          <p>Club Moto Custom • Marseille • Bouches-du-Rhône (13) • Aix-en-Provence • Martigues • Salon-de-Provence</p>
+          <p>Gardanne • Vitrolles • Association Motards • Harley-Davidson • Indian • Shadow • Custom Bikes</p>
           <p className="pt-4">© {new Date().getFullYear()} GAULS BASTARDS. Tous droits réservés.</p>
         </div>
       </div>

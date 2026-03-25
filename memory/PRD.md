@@ -39,20 +39,20 @@ Site vitrine optimisé SEO pour le moto club **GAULS BASTARDS**, association de 
 ## Ce qui a été implémenté ✅
 
 ### Pages/Sections (Date: 25 Mars 2026)
-1. **Hero** - Logo, titre, tagline, photo membres avec motos, CTAs
+1. **Hero** - Logo, titre, tagline, photo bar noir & blanc, CTAs
 2. **Qui Sommes-Nous** - Description, valeurs (Fraternité, Passion, Liberté, Respect)
 3. **Événements** - Calendrier des prochaines balades (4 événements exemple)
-4. **Galerie** - 12 photos avec lightbox (clic pour agrandir)
+4. **Galerie** - 13 photos avec lightbox (clic pour agrandir)
 5. **Contact** - Formulaire (Nom, Email, Téléphone optionnel, Message)
 6. **Footer** - Réseaux sociaux, mots-clés SEO
 
 ### SEO Optimisé
-- Meta title/description
+- Meta title/description avec toutes les villes du 13
+- Mots-clés: club moto marseille, association motard 13, harley davidson marseille, moto club aix en provence, moto club martigues, moto club salon de provence, moto club gardanne, moto club vitrolles, balade moto bouches du rhône
 - Open Graph tags (Facebook)
 - Twitter Cards
 - Geo tags (Marseille, 13)
 - Schema.org structured data (Organization)
-- Mots-clés: moto club marseille, association motard 13, balade moto bouches du rhône, etc.
 
 ### Design
 - Style: Old school / Vintage Biker
