@@ -1,0 +1,171 @@
+/* Additional App-specific styles */
+
+/* Smooth scroll offset for fixed header */
+html {
+  scroll-padding-top: 80px;
+}
+
+/* Hero image positioning */
+#accueil img {
+  object-position: center 20%;
+}
+
+/* Card hover effects */
+.card {
+  position: relative;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 0;
+  background: var(--color-gold);
+  transition: height 0.3s ease;
+}
+
+.card:hover::before {
+  height: 100%;
+}
+
+/* Gallery masonry effect on larger screens */
+@media (min-width: 1024px) {
+  .gallery-grid > div:nth-child(5) {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+}
+
+/* Form focus animations */
+input:focus,
+textarea:focus {
+  transform: translateY(-2px);
+}
+
+/* Button loading state */
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Lightbox animation */
+[data-testid="gallery-lightbox"] {
+  animation: fadeIn 0.3s ease;
+}
+
+[data-testid="gallery-lightbox"] img {
+  animation: scaleIn 0.3s ease;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Mobile menu animation */
+[data-testid="mobile-menu"] {
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Event card date box */
+.card .flex-shrink-0 {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+}
+
+/* Section transitions on scroll */
+.section {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+/* About section image frame */
+#about .relative img {
+  position: relative;
+  z-index: 10;
+}
+
+/* Navigation link underline effect */
+nav a:not([data-testid="nav-logo"])::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-gold);
+  transition: width 0.3s ease;
+}
+
+nav a:not([data-testid="nav-logo"]):hover::after {
+  width: 100%;
+}
+
+nav a:not([data-testid="nav-logo"]) {
+  position: relative;
+}
+
+/* Footer SEO text */
+footer .text-center p {
+  line-height: 2;
+}
+
+/* Custom cursor on interactive elements */
+a, button, .cursor-pointer {
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .section-title h2 {
+    font-size: 1.75rem;
+  }
+  
+  .grid.sm\\:grid-cols-2 {
+    gap: 1rem;
+  }
+  
+  .card {
+    padding: 1.25rem;
+  }
+  
+  #events .card {
+    flex-direction: column;
+  }
+  
+  #events .card .flex-shrink-0 {
+    width: 100%;
+    height: 60px;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  nav, footer, .grain-overlay {
+    display: none;
+  }
+  
+  .section {
+    page-break-inside: avoid;
+  }
+}

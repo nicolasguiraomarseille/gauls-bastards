@@ -1,0 +1,59 @@
+{
+  "total_tests": 7,
+  "passed_tests": 7,
+  "failed_tests": 0,
+  "success_rate": 100.0,
+  "test_details": [
+    {
+      "test": "Health Check",
+      "success": true,
+      "details": "Status: healthy",
+      "response_data": {
+        "status": "healthy",
+        "service": "GAULS BASTARDS API",
+        "timestamp": "2026-03-25T21:28:24.690686+00:00"
+      }
+    },
+    {
+      "test": "API Root",
+      "success": true,
+      "details": "Message: GAULS BASTARDS API - Ride Custom!",
+      "response_data": {
+        "message": "GAULS BASTARDS API - Ride Custom!"
+      }
+    },
+    {
+      "test": "Contact Form Submission",
+      "success": true,
+      "details": "Success: Votre message a \u00e9t\u00e9 envoy\u00e9 avec succ\u00e8s. Nous vous r\u00e9pondrons bient\u00f4t !",
+      "response_data": {
+        "success": true,
+        "message": "Votre message a \u00e9t\u00e9 envoy\u00e9 avec succ\u00e8s. Nous vous r\u00e9pondrons bient\u00f4t !"
+      }
+    },
+    {
+      "test": "Contact Form Validation",
+      "success": true,
+      "details": "Validation errors caught correctly",
+      "response_data": null
+    },
+    {
+      "test": "Contact Messages Retrieval",
+      "success": true,
+      "details": "Retrieved 1 messages",
+      "response_data": null
+    },
+    {
+      "test": "Status Check Creation",
+      "success": true,
+      "details": "Created status check for test_client",
+      "response_data": null
+    },
+    {
+      "test": "Status Checks Retrieval",
+      "success": true,
+      "details": "Retrieved 1 status checks",
+      "response_data": null
+    }
+  ]
+}
