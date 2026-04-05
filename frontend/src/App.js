@@ -25,6 +25,7 @@ export default function App() {
   return (
     <div style={{ background: "#111", color: "#fff", fontFamily: "Arial" }}>
 
+      {/* NAVBAR */}
       <nav style={{
         display: "flex",
         justifyContent: "space-between",
@@ -50,6 +51,7 @@ export default function App() {
         </div>
       </nav>
 
+      {/* HERO */}
       <section style={{
         textAlign: "center",
         padding: "80px 20px"
@@ -73,6 +75,7 @@ export default function App() {
         </p>
       </section>
 
+      {/* TEXTE */}
       <section style={{ padding: "40px", textAlign: "center" }}>
         <h2>CLUB MOTO À MARSEILLE</h2>
         <p>
@@ -85,6 +88,7 @@ export default function App() {
         </p>
       </section>
 
+      {/* YOUTUBE */}
       <section style={{ textAlign: "center", padding: "50px" }}>
         <h2>NOTRE CHAÎNE YOUTUBE</h2>
 
@@ -99,6 +103,7 @@ export default function App() {
         ></iframe>
       </section>
 
+      {/* GALERIE */}
       <section style={{ padding: "40px" }}>
         <h2 style={{ textAlign: "center" }}>GALERIE</h2>
 
